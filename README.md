@@ -80,3 +80,44 @@ Optional:
 2. Run `game-mode.cmd` and confirm CPU list appears.
 3. Relaunch using `resume-dev.cmd`.
 4. Confirm manual fallback commands also work.
+
+## Android APK (Capacitor)
+
+This project now supports Android packaging while keeping the same web UI/behavior.
+
+### One-time setup already added
+
+- Capacitor config: `capacitor.config.ts`
+- Android native project: `android/`
+- Router fallback for native builds: `HashRouter` on native, `BrowserRouter` on web
+
+### Build commands
+
+1. Sync web build into Android project:
+`npm run android:sync`
+
+2. Open Android Studio project:
+`npm run android:open`
+
+3. Build debug APK:
+`npm run android:apk:debug`
+
+4. Build release APK:
+`npm run android:apk:release`
+
+### Current machine issue (must fix to build APK)
+
+- Your `JAVA_HOME` points to:
+`C:\Program Files\Android\Android Studio\jbr`
+- That folder does not currently contain `bin\java.exe`, so Gradle fails.
+
+### Fix JAVA_HOME (Windows)
+
+1. Install JDK 17 (Temurin/Microsoft/Oracle).
+2. Set `JAVA_HOME` to that JDK path (example):
+`C:\Program Files\Eclipse Adoptium\jdk-17.x.x`
+3. Ensure `%JAVA_HOME%\bin` is on `Path`.
+4. Open a new terminal and verify:
+`java -version`
+5. Re-run:
+`npm run android:apk:debug`
