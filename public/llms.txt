@@ -1,0 +1,13 @@
+# Witcher 3 Wild Hunt 100% Completion Guide
+
+> A comprehensive walkthrough and companion guide for The Witcher 3: Wild Hunt on Xbox, covering quests, world map, Gwent, bestiary, builds, endings, and tips for 100% completion.
+
+The guide is organized into themed sections accessible from the main page. Spoilers are hidden behind dropdowns. User progress (quest checklists, visited map pins, Gwent card collection, and saved decks) is tracked locally.
+
+## Sections
+
+- [Home](/): Main hub with navigation to every guide section — quests, world map, Gwent, bestiary, builds, dialogue, endings, routes, and tips.
+
+## Optional
+
+- [404](/not-found): Fallback page for unknown routes.
